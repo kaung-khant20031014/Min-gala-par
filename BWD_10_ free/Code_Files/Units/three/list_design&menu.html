@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Design & Menu</title>
+    <style>
+        body{
+            background-color: rgb(26, 190, 245);
+        }
+        .test-list{
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .test-list li{
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            border-left: 5px solid rgb(0, 95, 204);
+            color: rgb(26, 190, 245);
+            transition: 0.5s;
+            border-radius: 0 5px 5px 0px;
+        }
+        .test-list li:hover{
+            border-left-width: 10px ;
+            /* background-color:rgb(26, 190, 245); */
+            font-weight: bolder;
+        }
+        .box{
+            width: 200px;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .box-title{
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color:rgb(26, 190, 245);
+            border: 2px solid white;
+            padding: 10px;
+            background-color:white ;
+            border-radius: 5px;
+        }
+        .nav-bar{
+            list-style-type: none;
+            padding: 10px;
+            background-color: white;
+        }
+        .nav-item{
+            display: inline-block;
+            padding: 10px 15px;
+            /* width: 90px; */
+            font-family: sans-serif;
+            text-transform: uppercase;
+            transition: 0.5s;
+            color: rgb(26, 190, 245);
+            
+        }
+        .nav-item:hover{
+            background-color: rgb(26, 190, 245);
+            color: white;
+        }
+        .nav-item.active{
+            background-color: rgb(26, 190, 245);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="box">
+        <legend class="box-title">My Test List</legend>
+        <ul class="test-list">
+            <li>Home</li>
+            <li>News</li>
+            <li>About</li>
+            <li>Contant Us</li>
+            <li>Our Service</li>
+        </ul>
+    </fieldset>
+    <div>
+        <nav>
+            <ul class="nav-bar">
+            <li class="nav-item active">Home</li>
+            <li class="nav-item">News</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Contant Us</li>
+            <li class="nav-item">Our Service</li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

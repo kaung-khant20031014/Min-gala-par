@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsArrowFunctionPart1</title>
+</head>
+
+<body>
+
+    <h1>Function,Arrow Function</h1>
+
+    <button>Click me</button>
+
+    <script>
+        // function one() {
+        //     console.log("This is function One");
+        // }
+        let one = () => console.log("This is function one");
+
+        // function two() {
+        //     let x = "X variable";
+        //     console.log(x);
+        // }
+        let two = () => {
+            let x = "X is variable";
+            console.log(x);
+        };
+
+        // function three(x) {
+        //     console.log(x);
+        // }
+        let three = x => console.log(x);
+
+        // function four(x, y = 1) {
+        //     console.log({
+        //         x,
+        //         y
+        //     });
+        // }
+        let four = (x, y = 1) => console.log({
+            x,
+            y
+        });
+
+        // document.querySelector("button").addEventListener("click", function() {
+        //     console.log("This is five function");
+        // })
+        document.querySelector("button").addEventListener("click", () => console.log("this is five"));
+
+        //IIfe
+        // (function() {
+        //     console.log("This is IIfe");
+        // })();
+        (() => console.log("This is IIFE"))();
+    </script>
+
+</body>
+
+</html>

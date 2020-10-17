@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything is an Object</title>
+</head>
+
+<body>
+    <h1>Everything is an object</h1>
+    <input type="file" name="photo[]" id="file" multiple>
+    <script>
+        let name = "Kaung Khant";
+        let age = 19;
+        let live = "Pathein";
+
+        let arr = ["kaung khant", 19, "pathein"];
+
+        function test() {
+            console.log({
+                name,
+                age,
+                live,
+                arr
+            });
+        }
+
+        let obj = {
+            //properties
+            name: "Kaung Khant Zaw",
+            age: 19,
+            live: "pathein",
+            work: "It",
+
+            //method
+            // teach: function() {
+            //     console.log("this is method");
+            // }
+            teach: function() {
+                console.log(`${this.name} learn web design`);
+            }
+
+        };
+
+        class One {
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+        }
+        let one = new One(100, 200);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Miniproject</title>
+    <style>
+        img {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="off.png" id="obj" alt="">
+    <!-- <button onclick="lightOn()">On</button>
+    <button onclick="lightOff()">Off</button> -->
+    <button onclick="control()">Control</button>
+
+    <script>
+        // let img = document.getElementById("obj"); //global
+        // function lightOn() {
+        //     img.src = "on.png";
+        // }
+
+        // function lightOff() {
+        //     img.src = "off.png";
+        // }
+        function control() {
+            let img = document.getElementById("obj");
+            let arr = img.src.split("/");
+            console.log(arr);
+
+            if (arr[arr.length - 1] == "off.png") {
+                img.src = "on.png";
+            } else {
+                img.src = "off.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

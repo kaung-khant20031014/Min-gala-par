@@ -1,0 +1,15 @@
+Css  Display Property
+	#Value
+		1.Block
+			width - 100%,
+			control-true.
+		2.Inline
+			width - content width,
+			control-false
+		3.Inline-block
+			width -content width,
+			control-true
+		4.None
+			width - 0,
+			control-0.
+			

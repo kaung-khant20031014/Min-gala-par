@@ -1,0 +1,26 @@
+Javascript Operator(https://www.w3schools.com/js/js_operators.asp?				fbclid=IwAR3exFzNCq5XCg6yaQKFVXYx8P2USOtqhnfdzkHlb-__C23um7yUwS-
+
+	1.Assignment operator (https://www.w3schools.com/js/js_assignment.asp?fbclid=IwAR3nD8kR8EGo-				WkSeVPwzcLqdgmL2CL1LIeBbGQKCW2yIMKBc976Mk744GE)
+		- ( =,+=,*=,... )
+
+	2.Arithmetic operator (https://www.w3schools.com/js/js_arithmetic.asp?fbclid=IwAR0yOgj8ZxIZal-			hOwNK0VTSWakERbGFhkqLU5VOiPr1625m1vugqmVhLZQ)
+		- ( +,-,*,/,**,%,++,-- )
+		- * = အမြှောက်
+		- / =အစား
+		- ** = ထပ်ကိန်း
+		- % = အကြွင်း
+
+	3.Comparison operator
+		- ( <,>,==,!=,<=,>=,===,!== )
+		- < - greater than
+		- > - less than
+		- == - equal
+		- != - not equal
+		- === -equal value and equal type
+		- !== - not equal value or not equal type
+	4.Logical operator
+		- { &&, ||, ! }
+		- && = and
+		- || = or
+		- ! = not
+ 	https://www.w3schools.com/js/js_comparisons.asp?fbclid=IwAR2vgTXlvLqVJfuLNKHPGO63UnscKmo1pITVYZDzKo2aAbyezwCR5RqwKP8

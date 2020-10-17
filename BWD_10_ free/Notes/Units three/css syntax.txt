@@ -1,0 +1,18 @@
+Css Syntax 
+	1. Inline
+	2.Internal
+	3.Exnternal
+	
+	1.Inline
+		use attrubute - style -only tag
+
+	2.Internal
+		use  style tag - page
+		write in head tags 
+		use kali blackad { }
+ 
+	3.External 
+		style file - style.css 
+		.ext is css
+		
+		

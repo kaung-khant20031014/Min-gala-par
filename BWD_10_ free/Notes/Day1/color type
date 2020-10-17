@@ -1,0 +1,21 @@
+Color type
+
+	1.solid
+	2.transprent
+	
+	1.Solid
+		4type
+		
+	2.Transprent Hex(#code-8)(အလင်းပေါက် အရောင်)
+	
+		#ff0000 00=>99=>aa=>ff
+		
+		
+	
+	
+	
+	-Transprent RGB
+	
+		rgba(0,0,0,0-0.6-1)
+	
+		

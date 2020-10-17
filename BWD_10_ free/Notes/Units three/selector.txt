@@ -1,0 +1,9 @@
+CSS Selector 
+	1.Sample Selector
+		1.Tags
+			-tagname
+		2.id
+			-use symbol(#) 
+			only one
+		3.class
+			-( . ) refer many 

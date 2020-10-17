@@ -1,0 +1,59 @@
+Datatypes
+	1.Number
+	2.String
+	3.Object 
+	This is ban tags
+	`My height is 5' 6"`
+	JS code,
+	let name = "kaung khant zaw";
+	"I'm "+name
+	`I'm ${name}`
+
+ 	3.Object - ARR & Obj
+		a. ARR(array)
+			Array = [ ], [x,y,z], index-0,1,2,..., arr[index] 
+				-let arr = ["kaung khant",19,"pathein"];
+					undefined
+					arr
+					(3) ["kaung khant", 19, "pathein"]
+					     0: "kaung khant"
+					     1: 19
+ 					     2:"pathein"length: 
+  					     3__proto__: Array(0)
+					arr[0]
+					"kaung khant"
+		b.Obj(object)
+			objec = { },{x,y,z},key:val , obj.key
+				-let obj = {name:"kaung khant zaw",age:19,address:"pathein"};
+					undefined
+				obj
+				{name: "kaung khant zaw",
+				 age: 19, 
+				address: "pathein"}
+				address: "pathein"age: 19name: "kaung khant zaw"__proto__: Object
+				obj["address"]
+				"pathein"
+				obj.address
+				"pathein"
+				obj.age    
+				19
+				obj.name
+				"kaung khant zaw"
+
+			Change value
+				A. array
+				arr
+				(3) ["kaung khant zaw", 19, "pathein"]
+				arr[0] = "saw"
+				"saw"
+				arr
+				(3) ["saw", 19, "pathein"]
+
+
+	 			b.object
+				obj
+				{name: "kaung khant zaw", age: 19, address: "pathein"}
+				obj.address = "yangon"
+				"yangon"
+				obj   
+				{name: "kaung khant zaw", age: 19, address: "yangon"}

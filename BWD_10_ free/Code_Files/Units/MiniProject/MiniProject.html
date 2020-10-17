@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" href="open-laptop.svg">
+</head>
+
+<body>
+
+    <div class="todo">
+        <h1>To Do List</h1>
+        <div class="add-box">
+            <input type="text" id="input">
+            <button class="" onclick="addList()"><i class="fas fa-folder-plus btn fa-lg"></i></button>
+        </div>
+        <ol class="list" id="list">
+
+        </ol>
+    </div>
+    <script>
+        let minTextLength = 3;
+        let i = 1;
+        let input = document.getElementById("input");
+        let list = document.getElementById("list");
+
+        function textFilter(x) {
+
+            if (x) {
+                if (x.length >= minTextLength) {
+                    return x;
+                } else {
+                    alert("Minum word is 3");
+                    return false;
+                }
+            } else {
+                alert("Input text empty");
+                return false;
+            }
+
+        }
+
+        function showList(text) {
+            list.innerHTML += `
+                
+                <li class="list-item" id="list${i}">
+                    <button class="" onclick="deleteList(${i})"><i class="fas fa-trash-alt btn fa-lg"></i></button>
+                    <button class="" onclick="editList(${i})"><i class="fas fa-feather-alt btn fa-lg"></i></button>
+                    <span id="listText${i}">${text}</span>
+                </li>    
+            
+            `;
+            i++;
+
+        }
+
+        function deleteList(listId) {
+            let current = document.getElementById(`list${listId}`);
+            let currentText = document.getElementById(`listText${listId}`).innerHTML;
+            let deleteConfirm = confirm(`Are ya sure to Delete List'${currentText}'`);
+            if (deleteConfirm) {
+                list.removeChild(current);
+            } else {
+                console.log("Delete cancel");
+            }
+
+        }
+
+        function editList(listId) {
+            let current = document.getElementById(`listText${listId}`);
+            let newText = prompt("Say Somethig", current.innerHTML);
+            if (textFilter(newText)) {
+                current.innerHTML = newText;
+            }
+        }
+
+        function addList() {
+            //get
+            let inputText = textFilter(input.value);
+            if (inputText) {
+                //set
+                // console.log(inputText);
+                showList(inputText);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

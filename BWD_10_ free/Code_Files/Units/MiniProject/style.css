@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+    display: inline-block;
+    background-color: #303a52;
+}
+
+.todo {
+    width: 350px;
+    height: 500px;
+    background-image: url(https://images.pexels.com/photos/1154610/pexels-photo-1154610.jpeg?cs=srgb&dl=pexels-sam-willis-1154610.jpg&fm=jpg);
+    background-size: cover;
+    margin-left: 520px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 48px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.add-box {
+    width: 300px;
+    margin-left: 48px;
+}
+
+.add-box input {
+    width: 200px;
+    height: auto;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    font-size: large;
+}
+
+.list {
+    width: 300px;
+    margin-left: 48px;
+}
+
+.list-item {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.list-item button {
+    margin-right: 20px;
+}
+
+.list-item span {
+    margin-left: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 9px 7px 6px 7px;
+}
+
+.btn {
+    color: rgb(60, 60, 60);
+    size: 100px;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+}

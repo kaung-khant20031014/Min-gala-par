@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            border: 2px solid blue;
+            padding: 20px;
+            width: 310px;
+            border-radius: 5px;
+        }
+        
+        div {
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        input {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 100px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .col {
+            padding-top: 11px;
+            padding-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="result">Text</h1>
+    <div>
+        <input type="text" id="text" onkeyup="keyWord()"><button id="setText">Set Text</button>
+    </div>
+    <div>
+        <input type="color" id="color" class="col" onchange="changeColor()"><button id="setColor">Set Color</button>
+    </div>
+    <div>
+        <input type="number" id="fontSize"><button id="setSize" onclick="myFun()">Set FontSize</button>
+    </div>
+    <script>
+        // document.getElementById("setText").onclick = function() {
+        //     let x = document.getElementById("text").value;
+        //     document.getElementById("result").innerHTML = x;
+        // }
+
+        // document.getElementById("setColor").addEventListener("click", function() {
+        //     let x = document.getElementById("color").value;
+        //     document.getElementById("result").style.color = x;
+        // })
+
+        // function myFun() {
+        //     let x = document.getElementById("fontSize").value;
+        //     document.getElementById("result").style.fontSize = x + "px";
+
+        // }
+        let result = document.getElementById("result");
+        document.getElementById("setText").onclick = function() {
+            let x = document.getElementById("text").value;
+            result.innerHTML = x;
+            console.log(`Change text to "${x}"`);
+        }
+
+        document.getElementById("setColor").addEventListener("click", function() {
+            let x = document.getElementById("color").value;
+            result.style.color = x;
+            console.log(`Change color to "${x}"`);
+        })
+
+        function myFun() {
+            let x = document.getElementById("fontSize").value;
+            result.style.fontSize = x + "px";
+            console.log(`Change font to "${x}px"`);
+
+        }
+
+        function changeColor() {
+            let x = document.getElementById("color").value;
+            result.style.color = x;
+            console.log(`Change color to "${x}"`);
+        }
+
+        function keyWord() {
+            let x = document.getElementById("text").value;
+            result.innerHTML = x;
+            console.log(`Change text to "${x}"`);
+        }
+    </script>
+</body>
+
+</html>

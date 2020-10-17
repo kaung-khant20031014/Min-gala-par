@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quary</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .test{
+            width: 350px;
+            /* height: 100px; */
+            background-color: lightslategray;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+
+        }
+        @media screen and (max-width: 1024px) {
+            .test{
+                background-color: mediumpurple;
+                width: 49%;
+            }
+        }
+        @media screen and (max-width: 480px){
+            .test{
+                width: 100%;
+                background-color: limegreen;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <h1>Media Quary</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic officiis qui at, tenetur magnam esse ratione vitae temporibus placeat saepe, quod minus amet. Optio aperiam, consectetur nemo quis itaque id?</p>
+    </div>
+    <div class="test">
+        <h1>Media Quary</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic officiis qui at, tenetur magnam esse ratione vitae temporibus placeat saepe, quod minus amet. Optio aperiam, consectetur nemo quis itaque id?</p>
+    </div>
+    <div class="test">
+        <h1>Media Quary</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic officiis qui at, tenetur magnam esse ratione vitae temporibus placeat saepe, quod minus amet. Optio aperiam, consectetur nemo quis itaque id?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Box Model
+	Property and 		value
+	1.width          		% , px , hw , 
+	2.height			% , px , vh
+	3.border			boder-width , border-style , border-color , all in one
+				top , right , bottom , left , y(t,b)x(l,r) , t r b l (top,right,bottom,left)
+				#note-clock rise(t,r,b,l)
+	4.margin
+	5.padding

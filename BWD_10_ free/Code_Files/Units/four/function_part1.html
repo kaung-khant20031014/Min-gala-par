@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function part 1</title>
+</head>
+
+<body>
+    <h1>Javascript function</h1>
+    <script>
+        // let name = "kaung khant";
+        // let age = 19;
+        // let live = "pathein";
+
+        // let myself = `I'm ${name} and ${age} years old.
+        //                 I live in ${live}`;
+
+        // function myfun(name,age,live){
+
+        //     let myself = `I'm ${name} and ${age} years old.
+        //                 I live in ${live}`;//task
+
+        //     return myself;
+
+        // }
+        // function myfun(name, age, live) {
+
+        //     let bdYear = 2020 - age;//task
+
+        //     let myself = `I'm ${name} and born in ${bdYear}.
+        //                 I live in ${live}`; //task
+
+        //     return myself;
+
+        // }
+        let nowYear = 2020; //global scope or global variable
+
+
+        function myfun(name, age, live) {
+
+            let bdYear = nowYear - age; //local scope or local variable //task
+
+            let myself = `I'm ${name} and born in ${bdYear}.
+                        I live in ${live}`; //task
+
+            return myself;
+
+        }
+    </script>
+</body>
+
+</html>

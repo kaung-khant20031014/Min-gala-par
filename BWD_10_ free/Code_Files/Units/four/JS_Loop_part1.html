@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Loop part 1</title>
+</head>
+
+<body>
+    <h1>Js Loop</h1>
+    <p>Hello 3 emit</p>
+
+    <p>Fruits list</p>
+    <ol>
+
+    </ol>
+    <script>
+        //for in
+        let arr = ["Apple", "Orange", "Mango", "grapes", ];
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     document.querySelector("ol").innerHTML += `<li>${arr[i]}</li>`;
+
+        // }
+        // x က ဘယ်မှာ စပြီး ဘယ်မှာ ဆုံးမယ် ဆိုတာ သိတယ်သိတယ် (i နဲ့ ညီတယ်)
+        // for (x in arr) {
+        //     document.querySelector("ol").innerHTML += `<li>${arr[x]} for in</li>`;
+        // }
+
+        // x က arr ထဲက မခန်းတွေကို ကိုယ်စားပြုတယ်
+        // for (x of arr) {
+        //     document.querySelector("ol").innerHTML += `<li>${x} for of</li>`;
+        // }
+        // el က အခန်းတွေကို ကိုယ်စားပြုတယ် | index က အခန်းရဲ့ index number ကို ကိုယ်စားပြုတယ်
+        // obj arr proto မှာ အလုပ်လုပ်တယ်
+        // arr.map(function(el, index) {
+        //     document.querySelector("ol").innerHTML += `<li>${el}-${index}</li>`;
+
+        // });
+
+
+        let obj = {
+            //property
+            name: "Kaung Khant",
+            age: 19,
+            live: "pathein",
+            //method
+            // teach: function() {
+            //     console.log(`${this.name} learn web Designa`);
+
+            // }
+        };
+
+        //only use for in
+        for (x in obj) {
+            document.querySelector("ol").innerHTML += `<li>${x}-${obj[x]}</li>`;
+        };
+
+        function showHello(max) {
+            for (let i = 1; i <= max; i++) {
+                console.log(`${i} hello`);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

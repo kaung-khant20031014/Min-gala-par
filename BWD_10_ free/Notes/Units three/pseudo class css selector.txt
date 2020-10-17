@@ -1,0 +1,8 @@
+Pseudo classes css seletor
+	1.Hover
+
+	2.active
+
+	3.focus
+
+		transition: time;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object, property, method</title>
+</head>
+
+<body>
+    <h1>JavaScript OBJ Properties Method</h1>
+    <script>
+        // let mySelf = {
+        //     //properties
+        //     name: "kaung khant",
+        //     age: 19,
+        //     live: "pathein",
+        //     //methods
+        //     showAll: function(x) {
+        //         return `This is ${x}`;
+        //     }
+        // };
+        // let mySelf = {
+        //     //properties
+        //     name: "kaung khant",
+        //     age: 19,
+        //     live: "pathein",
+        //     //methods
+        //     showAll: function(x) {
+        //         return `I'm ${this.name},${this.age} years old and live in ${this.live}`;
+        //     }
+        // };
+        let mySelf = {
+            //properties
+            name: "kaung khant",
+            age: 19,
+            live: "pathein",
+            //methods
+            showAll: function(x) {
+                return `I'm ${this.name},born in ${this.getBdYear(this.age)} and live in ${this.live}`;
+            },
+            getBdYear: function(age) {
+                return 2020 - age;
+            }
+        };
+    </script>
+</body>
+
+</html>

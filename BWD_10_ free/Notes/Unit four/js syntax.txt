@@ -1,0 +1,9 @@
+Js Syntax
+
+	let x = 15 ;
+	let - keyword, x - variable , 15 -value(content), = - operator
+
+
+	const daysInWeek = 7;
+	const keyword to define a variable that cannot be reassigned,
+	the let keyword to define a variable with restricted scope. 
